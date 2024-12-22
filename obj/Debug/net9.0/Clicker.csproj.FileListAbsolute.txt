@@ -1,0 +1,14 @@
+C:\Users\lvd\RiderProjects\Clicker\bin\Debug\net9.0\Clicker.exe
+C:\Users\lvd\RiderProjects\Clicker\bin\Debug\net9.0\Clicker.deps.json
+C:\Users\lvd\RiderProjects\Clicker\bin\Debug\net9.0\Clicker.runtimeconfig.json
+C:\Users\lvd\RiderProjects\Clicker\bin\Debug\net9.0\Clicker.dll
+C:\Users\lvd\RiderProjects\Clicker\bin\Debug\net9.0\Clicker.pdb
+C:\Users\lvd\RiderProjects\Clicker\obj\Debug\net9.0\Clicker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lvd\RiderProjects\Clicker\obj\Debug\net9.0\Clicker.AssemblyInfoInputs.cache
+C:\Users\lvd\RiderProjects\Clicker\obj\Debug\net9.0\Clicker.AssemblyInfo.cs
+C:\Users\lvd\RiderProjects\Clicker\obj\Debug\net9.0\Clicker.csproj.CoreCompileInputs.cache
+C:\Users\lvd\RiderProjects\Clicker\obj\Debug\net9.0\Clicker.dll
+C:\Users\lvd\RiderProjects\Clicker\obj\Debug\net9.0\refint\Clicker.dll
+C:\Users\lvd\RiderProjects\Clicker\obj\Debug\net9.0\Clicker.pdb
+C:\Users\lvd\RiderProjects\Clicker\obj\Debug\net9.0\Clicker.genruntimeconfig.cache
+C:\Users\lvd\RiderProjects\Clicker\obj\Debug\net9.0\ref\Clicker.dll
