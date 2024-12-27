@@ -13,7 +13,7 @@ public class Clicker : IClicker
     public void Click()
     {
         clickDamage = 1;
-        Console.Clear();
+        //Console.Clear();
         Console.WriteLine("Click Me!");
         while (true)
         {
