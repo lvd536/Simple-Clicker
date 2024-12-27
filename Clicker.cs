@@ -13,14 +13,16 @@ public class Clicker : IClicker
     public void Click()
     {
         clickDamage = 1;
+        Console.Clear();
         Console.WriteLine("Click Me!");
         while (true)
         {
             if (people[0].Contains("both") && !people[0].Contains("applyed"))
             {
-                Console.WriteLine("Buyed clicker +2");
+                Console.WriteLine("\nBuyed clicker +2");
                 clickDamage += 2;
-                people.Insert(0, people[0]+ " applyed");
+                //people.Insert(0, people[0]+ " applyed");
+                people[0] += " applyed";
             }
             ConsoleKeyInfo input = Console.ReadKey();
             switch (input.Key)
@@ -63,6 +65,7 @@ public class Clicker : IClicker
         Console.WriteLine($"Total money: {clicks} | Current: Shop");
         Console.WriteLine($"---------------------------------");
         Console.WriteLine($"Choise item for buy:");
+        
         for (int i = 0; i < people.Count; i++)
         {
             if (!people[i].Contains("both"))
@@ -77,7 +80,9 @@ public class Clicker : IClicker
                 if (clicks >= 100)
                 {
                     clicks -= 100;
-                    people.Insert(0, people[0]+ " both");
+                    //people.Insert(0, people[0] + " both");
+                    people[0] += " both";
+                    Click();
                 }
                 else Console.WriteLine("Недостаточно средств");
                 break;
