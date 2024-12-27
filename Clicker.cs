@@ -4,7 +4,7 @@ namespace Clicker;
 
 public class Clicker : IClicker
 {
-    public int clickDamage { get; set; }
+    public static int clickDamage { get; set; }
     public int clicks { get; set; }
     
     public int upgrades { get; set; }
@@ -12,7 +12,6 @@ public class Clicker : IClicker
     private List<string> people = new List<string>();
     public void Click()
     {
-        clickDamage = 1;
         Console.Clear();
         Console.WriteLine("Click Me!");
         while (true)

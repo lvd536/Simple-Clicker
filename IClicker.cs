@@ -10,7 +10,7 @@ public interface IClicker
     
     public void initItems();
     
-    public int clickDamage { get; set; }
+    public static int clickDamage { get; set; }
     
     public int upgrades { get; set; }
     
