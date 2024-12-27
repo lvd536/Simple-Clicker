@@ -12,6 +12,7 @@ class Program
         }
         Clicker _clicker = new Clicker();
         _clicker.initItems();
+        Thread.Sleep(200);
         _clicker.Click();
     }
 }
