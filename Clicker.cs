@@ -7,8 +7,6 @@ public class Clicker : IClicker
     public static int clickDamage { get; set; }
     public int clicks { get; set; }
     
-    public int upgrades { get; set; }
-    
     private List<string> people = new List<string>();
     public void Click()
     {
@@ -16,13 +14,6 @@ public class Clicker : IClicker
         Console.WriteLine("Click Me!");
         while (true)
         {
-            if (people[0].Contains("both") && !people[0].Contains("applyed"))
-            {
-                Console.WriteLine("\nBuyed clicker +2");
-                clickDamage += 2;
-                //people.Insert(0, people[0]+ " applyed");
-                people[0] += " applyed";
-            }
             ConsoleKeyInfo input = Console.ReadKey();
             switch (input.Key)
             {
@@ -52,11 +43,6 @@ public class Clicker : IClicker
         }
     }
 
-    public void Upgrade()
-    {
-        Upgrade();
-    }
-
     public void Shop()
     {
         Console.Clear();
@@ -78,9 +64,79 @@ public class Clicker : IClicker
             case ConsoleKey.D0:
                 if (clicks >= 100)
                 {
-                    clicks -= 100;
-                    //people.Insert(0, people[0] + " both");
-                    people[0] += " both";
+                    if (!people[0].Contains("both"))
+                    {
+                        clicks -= 100;
+                        Console.WriteLine($"\nPaid: {people[0]}");
+                        people[0] += " both";
+                        clickDamage += 2;
+                        Thread.Sleep(2000);
+                    }
+                    else
+                    {
+                        Console.WriteLine("\nВы уже покупали данный предмет");
+                        Thread.Sleep(2000);
+                    }
+                    Click();
+                }
+                else Console.WriteLine("Недостаточно средств");
+                break;
+            case ConsoleKey.D1:
+                if (clicks >= 100)
+                {
+                    if (!people[1].Contains("both"))
+                    {
+                        clicks -= 100;
+                        Console.WriteLine($"\nPaid: {people[1]}");
+                        people[1] += " both";
+                        clickDamage += 2;
+                        Thread.Sleep(2000);
+                    }
+                    else
+                    {
+                        Console.WriteLine("\nВы уже покупали данный предмет");
+                        Thread.Sleep(2000);
+                    }
+                    Click();
+                }
+                else Console.WriteLine("Недостаточно средств");
+                break;
+            case ConsoleKey.D2:
+                if (clicks >= 100)
+                {
+                    if (!people[2].Contains("both"))
+                    {
+                        clicks -= 100;
+                        Console.WriteLine($"\nPaid: {people[2]}");
+                        people[2] += " both";
+                        clickDamage += 2;
+                        Thread.Sleep(2000);
+                    }
+                    else
+                    {
+                        Console.WriteLine("\nВы уже покупали данный предмет");
+                        Thread.Sleep(2000);
+                    }
+                    Click();
+                }
+                else Console.WriteLine("Недостаточно средств");
+                break;
+            case ConsoleKey.D3:
+                if (clicks >= 100)
+                {
+                    if (!people[3].Contains("both"))
+                    {
+                        clicks -= 100;
+                        Console.WriteLine($"\nPaid: {people[3]}");
+                        people[3] += " both";
+                        clickDamage += 2;
+                        Thread.Sleep(2000);
+                    }
+                    else
+                    {
+                        Console.WriteLine("\nВы уже покупали данный предмет");
+                        Thread.Sleep(2000);
+                    }
                     Click();
                 }
                 else Console.WriteLine("Недостаточно средств");
@@ -91,5 +147,8 @@ public class Clicker : IClicker
     public void initItems()
     {
         people.Add("+2 click (100 coins)");
+        people.Add("+4 click (600 coins)");
+        people.Add("+6 click (1200 coins)");
+        people.Add("+8 click (5000 coins)");
     }
 }
