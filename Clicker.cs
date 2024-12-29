@@ -82,14 +82,14 @@ public class Clicker : IClicker
                 else Console.WriteLine("Недостаточно средств");
                 break;
             case ConsoleKey.D1:
-                if (clicks >= 100)
+                if (clicks >= 600)
                 {
                     if (!people[1].Contains("both"))
                     {
-                        clicks -= 100;
+                        clicks -= 600;
                         Console.WriteLine($"\nPaid: {people[1]}");
                         people[1] += " both";
-                        clickDamage += 2;
+                        clickDamage += 4;
                         Thread.Sleep(2000);
                     }
                     else
@@ -102,14 +102,14 @@ public class Clicker : IClicker
                 else Console.WriteLine("Недостаточно средств");
                 break;
             case ConsoleKey.D2:
-                if (clicks >= 100)
+                if (clicks >= 1200)
                 {
                     if (!people[2].Contains("both"))
                     {
-                        clicks -= 100;
+                        clicks -= 1200;
                         Console.WriteLine($"\nPaid: {people[2]}");
                         people[2] += " both";
-                        clickDamage += 2;
+                        clickDamage += 6;
                         Thread.Sleep(2000);
                     }
                     else
@@ -122,14 +122,14 @@ public class Clicker : IClicker
                 else Console.WriteLine("Недостаточно средств");
                 break;
             case ConsoleKey.D3:
-                if (clicks >= 100)
+                if (clicks >= 5000)
                 {
                     if (!people[3].Contains("both"))
                     {
-                        clicks -= 100;
+                        clicks -= 5000;
                         Console.WriteLine($"\nPaid: {people[3]}");
                         people[3] += " both";
-                        clickDamage += 2;
+                        clickDamage += 8;
                         Thread.Sleep(2000);
                     }
                     else
